@@ -1,0 +1,36 @@
+{
+    "name": "kevin/auto-make",
+    "description": "Un auto generador de codigo para laravel",
+    "license": "GLP",
+    "keywords": ["laravel", "autoMake"],
+    "authors": [
+        {
+            "name": "kevin",
+            "email": "kevinmarinv05@gmail.com"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/console": "^8.42|^9.0",
+        "illuminate/filesystem": "^8.42|^9.0",
+        "illuminate/support": "^8.82|^9.0",
+        "illuminate/validation": "^8.42|^9.0",
+        "laravelcollective/html": "^6.3"
+    },
+    "autoload": {
+        "psr-4": {
+            "AutoMake\\Laravel\\": "src/",
+            "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "AutoMake\\Laravel\\AutoMakeServiceProvider"
+            ]
+        }
+    }
+}
