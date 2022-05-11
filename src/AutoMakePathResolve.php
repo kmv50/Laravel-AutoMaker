@@ -78,7 +78,10 @@ class AutoMakePathResolve{
 
 
     public function Delete(): bool{
-       return unlink($this->ToString());
+        $target = $this->ToString();
+        if(is_file($target))
+            return unlink($target);
+        return true;
     }
 
 }

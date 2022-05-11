@@ -17,5 +17,11 @@ class TemplateCommand extends Command
         $templateManager = new TemplateMaker();
         $templateManager->MakeTemplateJS();
         $this->info('JS scaffolding generated successfully.');
+        $templateManager->MakeLoginTemplate();
+        $this->info('Login scaffolding generated successfully.');
+        $templateManager->MakeLayoutTemplate();
+        $this->info('Layout scaffolding generated successfully.');
+        $templateManager->MakeRoute();
+        $this->info('Route scaffolding generated successfully.');
     }
 }
