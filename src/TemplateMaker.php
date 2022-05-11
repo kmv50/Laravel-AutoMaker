@@ -99,7 +99,19 @@ class TemplateMaker{
  
  
         copy($viewTemplate ,$pathview->ToString());
+
+
+        ////////////////////////////////////////////////////////////
+        $pathview = (new AutoMakePathResolve(resource_path()))->Push("views")->Push("home");
+        if(!is_dir($pathview ->ToString()))
+             mkdir($pathview ->ToString(),0777,true);
  
+        $pathview->Push('dashboard.blade.php');
+ 
+        $viewTemplate = (new AutoMakePathResolve(__DIR__))->Push("Templates")->Push("Views")->Push("dashboard.blade.php")->ToString();
+ 
+ 
+        copy($viewTemplate ,$pathview->ToString());
      }
 
 
