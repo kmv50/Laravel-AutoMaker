@@ -1,7 +1,7 @@
 {
     "name": "kevin-cr-software/auto-make",
     "description": "Un auto generador de codigo para laravel",
-    "license": "GLP",
+    "license": "MIT",
     "keywords": ["laravel", "autoMake"],
     "authors": [
         {
