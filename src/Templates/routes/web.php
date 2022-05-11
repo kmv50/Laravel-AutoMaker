@@ -2,7 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Security\AuthController;
-use App\Http\Controllers\Home\HomeController;
+use App\Http\Controllers\HomeController;
 
 
 /*
@@ -20,8 +20,8 @@ Route::get('unauthorized', function () {
     return response()->redirectTo("/login");
 })->name('unauthorized');
 
-Route::get('/login', [WebAuthController::class, 'login'])->name('app.login');
-Route::post('/authenticate', [WebAuthController::class, 'authenticate'])->name('app.authenticate');
+Route::get('/login', [AuthController::class, 'login'])->name('login');
+Route::post('/authenticate', [AuthController::class, 'authenticate'])->name('app.authenticate');
 
 
 
