@@ -110,5 +110,13 @@ class TemplateMaker{
         copy($source ,$target);
      }
 
+
+     public function MakeSeed(): void{
+        $target = (new AutoMakePathResolve(base_path()))->Push("database")->Push("seeders")->Push('DatabaseSeeder.php')->ToString();
+        $source = (new AutoMakePathResolve(__DIR__))->Push("Templates")->Push("seeders")->Push("DatabaseSeeder.php")->ToString();
+
+        copy($source ,$target);
+     }
+
 }
 

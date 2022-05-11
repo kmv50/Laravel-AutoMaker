@@ -23,5 +23,7 @@ class TemplateCommand extends Command
         $this->info('Layout scaffolding generated successfully.');
         $templateManager->MakeRoute();
         $this->info('Route scaffolding generated successfully.');
+        $templateManager->MakeSeed();
+        $this->info('overwriting seed successfully.');
     }
 }
