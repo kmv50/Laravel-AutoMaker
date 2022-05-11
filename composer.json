@@ -1,5 +1,5 @@
 {
-    "name": "kevin/auto-make",
+    "name": "kevin-cr-software/auto-make",
     "description": "Un auto generador de codigo para laravel",
     "license": "GLP",
     "keywords": ["laravel", "autoMake"],
