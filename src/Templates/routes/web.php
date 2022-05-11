@@ -28,4 +28,5 @@ Route::post('/authenticate', [AuthController::class, 'authenticate'])->name('app
 
 Route::group(['middleware' => ['auth']], function() {
     Route::get('/',[HomeController::class, 'Index'])->name('app.home');
+    Route::get('/logout', [AuthController::class, 'logout'])->name('app.logout');
 });
