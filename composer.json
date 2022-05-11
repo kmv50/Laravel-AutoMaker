@@ -19,8 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "AutoMake\\Laravel\\": "src/",
-            "Illuminate\\Foundation\\Auth\\": "auth-backend/"
+            "AutoMake\\Laravel\\": "src/"
         }
     },
     "config": {

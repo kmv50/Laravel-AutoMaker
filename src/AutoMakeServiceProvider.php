@@ -6,7 +6,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
 use AutoMake\Laravel\TemplateCommand;
 
-class UiServiceProvider extends ServiceProvider
+class AutoMakeServiceProvider extends ServiceProvider
 {
     public function register()
     {
